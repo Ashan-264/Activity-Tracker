@@ -1,8 +1,6 @@
 # <h1 align="center">🏋️ Fitness Activity Tracker 🏃</h1>
 
-<p align="center">
-  <img src="link-to-screenshot" alt="App Screenshot" width="600"/>
-</p>
+
 
 <p align="center">  
   A simple and intuitive Android app to track your physical activities, set fitness goals, and monitor your progress.
