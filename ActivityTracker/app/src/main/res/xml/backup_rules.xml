@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_logging.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextActivityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ViewModel.Activity Name" />
+
+    <EditText
+        android:id="@+id/editTextActivityDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ViewModel.Activity Date (YYYY-MM-DD)" />
+
+    <EditText
+        android:id="@+id/editTextActivityDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration (minutes)" />
+
+    <EditText
+        android:id="@+id/editTextActivityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ViewModel.Activity Type" />
+
+    <Button
+        android:id="@+id/buttonSaveActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save ViewModel.Activity" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961763145372",
+    "project_id": "activity-tracker-28a70",
+    "storage_bucket": "activity-tracker-28a70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961763145372:android:701e070ce13d1e7df11f59",
+        "android_client_info": {
+          "package_name": "com.example.activitytracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB50mwvi6NkzjkDVT3s-szDnEaVFLn5wuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

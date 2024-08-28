@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="800sp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="Theme     " />
+
+            <Switch
+                android:id="@+id/tglTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:defaultValue="false"
+                android:key="switch_preference_1"
+                android:title="Dark Mode" />
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editTextGoal"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:hint="Set your goal" />
+
+        <Button
+            android:id="@+id/buttonSaveGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Goal" />
+
+        <Button
+            android:id="@+id/buttonViewGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Goals" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewGoals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Goals"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom"
+        app:menu="@menu/bottom_menu"
+        android:layout_gravity="bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

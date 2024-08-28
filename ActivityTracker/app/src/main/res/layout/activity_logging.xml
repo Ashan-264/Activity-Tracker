@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_logging.xml -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/editTextActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity Name" />
+
+        <EditText
+            android:id="@+id/editTextActivityDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity Date (YYYY-MM-DD)" />
+
+        <EditText
+            android:id="@+id/editTextActivityDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (minutes)" />
+
+        <EditText
+            android:id="@+id/editTextActivityType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity Type" />
+
+        <Button
+            android:id="@+id/buttonSaveActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Activity" />
+
+        <Button
+            android:id="@+id/buttonActivitySummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Summary" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
